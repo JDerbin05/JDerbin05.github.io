@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+html {
+    background-color: darkslategrey;
+    color: white;
+}
+
+body {
+    margin: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: grey;
+    text-align: center;
+}
+
+img {
+    width: 30%;
+}
+
+ul {
+    text-align: justify;
+}
+
+dl {
+    text-align: justify;
+}
