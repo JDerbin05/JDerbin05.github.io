@@ -1,14 +1,14 @@
 @charset "utf-8";
 
 html {
-    background-color: #003325;
+    background-color: #007484 /*003325*/;
     color: #ffffff;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 body {
     margin: 0.75%;
-    background-color: #394d00;
+    background-color: #008452; /*#394d00*/
     text-align: center;
 }
 
@@ -38,7 +38,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    color: #bfff00;
+    color: #00fa9a; /*#bfff00*/
     text-decoration: underline;
 }
 
@@ -47,5 +47,5 @@ dl {
 }
 
 dt {
-    font-weight: bolder;
+    font-style: italic;
 }
