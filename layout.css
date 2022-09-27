@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 html {
-    border: 20px solid #007584;
-    background-color: #007584;
+    border: 20px solid #202020;/*007584*/
+    background-color: #202020;
     color: #ffffff;
     line-height: 200%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -10,7 +10,7 @@ html {
 
 body {
     margin: auto;
-    background-color: #008452;
+    background: linear-gradient(#008452, #00444d 75%);
     text-align: center;
 }
 
@@ -43,6 +43,10 @@ a:link, a:visited {
 a:hover, a:active {
     color: #00ddfa;
     text-decoration: underline;
+}
+
+nav a, h1 {
+    text-shadow: #000000 5px 5px 5px;
 }
 
 dl {
