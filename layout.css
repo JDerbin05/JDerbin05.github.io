@@ -14,25 +14,20 @@ body {
     text-align: center;
 }
 
-img {
-    width: 20%;
+h1, nav a {
+    text-shadow: #000000 5px 5px 5px;
 }
 
-li {
-    text-align: justify;
-    
-}
-
-header li {
-    text-align: justify;
-    display: inline;
-    padding: 2.5%;
-}
-
-header a {
+nav a {
     color: white;
     text-decoration: none;
     font-size: 150%;
+}
+
+nav li {
+    text-align: justify;
+    display: inline;
+    padding: 2.5%;
 }
 
 a:link, a:visited {
@@ -45,8 +40,13 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-nav a, h1 {
-    text-shadow: #000000 5px 5px 5px;
+img {
+    width: 20%;
+}
+
+li {
+    text-align: justify;
+    
 }
 
 dl {
