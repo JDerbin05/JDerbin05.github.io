@@ -1,21 +1,30 @@
 @charset "utf-8";
 
 html {
-    border: 20px solid #202020;/*007584*/
-    background-color: #202020;
+    background: linear-gradient(#008452, #00444d 75%);
+    background-attachment: fixed;
     color: #ffffff;
     line-height: 200%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 body {
-    margin: auto;
-    background: linear-gradient(#008452, #00444d 75%);
     text-align: center;
+}
+
+h1 {
+    padding-top: 2.5%;
 }
 
 h1, nav a {
     text-shadow: #000000 5px 5px 5px;
+}
+
+nav ul {
+    position: fixed;
+    top: 0;
+    padding-left: 0;
+    width: 100%;
 }
 
 nav a {
@@ -25,9 +34,9 @@ nav a {
 }
 
 nav li {
-    text-align: justify;
+    text-align: center;
     display: inline;
-    padding: 2.5%;
+    padding: 2.5%;    
 }
 
 a:link, a:visited {
@@ -46,7 +55,6 @@ img {
 
 li {
     text-align: justify;
-    
 }
 
 dl {
