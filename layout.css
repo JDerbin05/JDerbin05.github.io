@@ -22,6 +22,10 @@ nav a {
     font-size: 150%;
 }
 
+nav ul {
+    padding: 0;
+}
+
 nav li {
     text-align: center;
     display: inline;
@@ -53,4 +57,31 @@ dl {
 dt {
     font-style: italic;
     padding: 1.025%;
+}
+
+@media only screen and (max-width: 480px) {
+
+    nav a {
+        font-size: 100%;
+    }
+
+    img {
+        width: 40%;
+    }
+
+    dl {
+        width: 75%
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    img {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    img {
+        width: 20%;
+    }
 }
