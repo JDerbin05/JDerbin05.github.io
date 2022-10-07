@@ -1,40 +1,26 @@
 @charset "utf-8";
 
-html {
+html{
     background: linear-gradient(#008452, #00444d 75%);
     background-attachment: fixed;
-    color: #ffffff;
     line-height: 200%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-body {
-    text-align: center;
-}
-
 h1, nav a {
     text-shadow: #000000 5px 5px 5px;
+    font-weight: bold;
+    font-size: 2em; 
 }
 
-nav a {
-    color: white;
+html, nav a, a:link, a:visited {
+    color: #ffffff;
     text-decoration: none;
-    font-size: 150%;
-}
-
-nav ul {
-    padding: 0;
 }
 
 nav li {
-    text-align: center;
     display: inline;
     padding: 2.5%;    
-}
-
-a:link, a:visited {
-    color: #ffffff;
-    text-decoration: none;
 }
 
 a:hover, a:active {
@@ -42,27 +28,30 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-img {
-    width: 20%;
-}
-
-li {
-    text-align: justify;
-}
-
-dl {
-    text-align: justify;
-}
-
 dt {
     font-style: italic;
     padding: 1.025%;
 }
 
-@media only screen and (max-width: 480px) {
+body, nav li {
+    text-align: center;
+}
 
-    nav a {
-        font-size: 100%;
+nav ul {
+    padding: 0;
+}
+
+img {
+    width: 20%;
+}
+
+li, dl {
+    text-align: left;
+}
+
+@media only screen and (max-width: 480px) {
+    h1, nav a {
+        font-size: 1.15em;
     }
 
     img {
@@ -76,7 +65,7 @@ dt {
 
 @media only screen and (min-width: 481px) {
     img {
-        width: 25%;
+        width: 40%;
     }
 }
 
