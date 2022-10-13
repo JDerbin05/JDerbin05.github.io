@@ -39,6 +39,7 @@ body, nav li {
 
 nav ul {
     padding: 0;
+    margin: 0px;
 }
 
 img {
@@ -50,8 +51,8 @@ li, dl {
 }
 
 @media only screen and (max-width: 480px) {
-    h1, nav a {
-        font-size: 1.1em;
+    h1, nav a{
+        font-size: 160%;
     }
 
     img {
