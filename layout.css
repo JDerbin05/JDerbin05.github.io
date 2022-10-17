@@ -74,4 +74,12 @@ li, dl {
     img {
         width: 20%;
     }
+
+    #multi-link {
+        display: none;
+    }
+    
+    li:hover #multi-link {
+        display: block;
+    }
 }
