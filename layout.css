@@ -70,12 +70,20 @@ td {
     vertical-align: top;
 }
 
-ul.multi-link {
+ul.multi-link, li > ul {
     display: none;
 }
 
-td:hover .multi-link {
+td:hover .multi-link, li:hover ul {
     display: block;
+}
+
+li {
+    list-style-type: square;
+}
+
+.circle li {
+    list-style-type: disc;
 }
 
 dt {
@@ -96,7 +104,7 @@ dt {
         font-size: 75%;
     }
 
-    ul.multi-link {
+    ul.multi-link, li > ul{
         display: block;
     }
 
