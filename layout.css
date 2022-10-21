@@ -37,8 +37,19 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
+@keyframes pic {
+    from {
+        filter: invert(100%);
+    }
+
+    to {
+        filter: invert(0%);
+    }
+}
+
 img {
     width: 20%;
+    animation: pic 2s forwards;
 }
 
 li, dl {
@@ -59,11 +70,11 @@ td {
     vertical-align: top;
 }
 
-td #multi-link {
+ul.multi-link {
     display: none;
 }
 
-td:hover #multi-link {
+td:hover .multi-link {
     display: block;
 }
 
@@ -85,7 +96,7 @@ dt {
         font-size: 75%;
     }
 
-    td #multi-link {
+    ul.multi-link {
         display: block;
     }
 
