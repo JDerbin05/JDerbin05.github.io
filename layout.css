@@ -37,19 +37,8 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-@keyframes pic {
-    from {
-        filter: invert(100%);
-    }
-
-    to {
-        filter: invert(0%);
-    }
-}
-
-img {
+img#me {
     width: 20%;
-    animation: pic 2s forwards;
 }
 
 li, dl {
@@ -104,7 +93,7 @@ dt {
         font-size: 75%;
     }
 
-    ul.multi-link, li > ul{
+    ul.multi-link, li > ul, div.hobbyImg {
         display: block;
     }
 
