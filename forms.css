@@ -16,9 +16,9 @@ form#survey {
 }
 
 form#survey > fieldset {
-   background-color: rgb(241, 232, 181);
-   color: #000000;
+   background-color: #202020;
    border-radius: 20px;
+   border-color: #808080;
    flex: 1 1 300px;
    font-size: 0.8em;
    padding: 10px;
@@ -26,7 +26,7 @@ form#survey > fieldset {
 }
 
 legend {
-   background-color: rgb(179, 20, 25);
+   background-color: #808080;
    color: white;
    padding: 5px;
 }
@@ -48,14 +48,23 @@ input[type='submit'], input[type='reset'] {
    margin: 15px;
 }
 
+input, select, textarea {
+   background-color: #404040;
+   color: white;
+}
+
+::placeholder {
+   color: rgba(255, 255, 255, 0.5)
+}
+
 input:focus, select:focus, textarea:focus {
-   background-color: rgb(220, 255, 220);
+   background-color: rgb(110, 196, 110);
 }
 
 input#name:focus:valid, input#zip:focus:valid, input#phone:focus:valid, input#mail:focus:valid {
-   background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+   background: rgb(0, 128, 0) url(rb_valid.png) bottom right/contain no-repeat;
 }
 
 input#name:focus:invalid, input#zip:focus:invalid, input#phone:focus:invalid, input#mail:focus:invalid {
-   background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+   background: rgb(128, 0, 0) url(rb_invalid.png) bottom right/contain no-repeat;
 }
