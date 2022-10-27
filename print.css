@@ -33,3 +33,10 @@ img {
 dd {
     page-break-before: avoid;
 }
+
+figure {
+    width: 150%;
+    height: 150%;
+    text-align: center;
+    vertical-align: baseline;
+}

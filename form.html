@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JD: Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="layout.css" rel="stylesheet" media="screen">
+        <link href="forms.css" rel="stylesheet">
+        <link href="print.css" rel="stylesheet" media="print">
+        <link rel="shortcut icon" href="icon.png" type="image/png">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="terminology.html">Terms</a></li>
+                    <li><a href="hobby.html">Hobby</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Form</h1>
+        <form id="survey" action="#" method="post">
+            <fieldset id="mainSur">
+                <legend>Log</legend>
+                <div class="formRow">
+                    <label for="name">Name*</label>
+                    <input type="text" name="perName" id="name" placeholder="first and last name" required>
+                </div>
+
+                <div class="formRow">
+                    <label for="ageSpin">Age</label>
+                    <input type="number" name="perSpin" id="ageSpin" value="1" step="1" min="1" max="100">
+                </div>
+
+                <div class="formRow">
+                    <label for="mail">E-mail*</label>
+                    <input type="email" name="perEmail" id="mail">
+                </div>
+
+                <div class="formRow">
+                    <label for="occ">School/Occupation</label>
+                    <input type="text" name="perOcc" id="occ">
+                </div>
+
+                <div class="formRow">
+                    <label for="zip">Postal Code</label>
+                    <input name="perZip" id="zip" type="text" placeholder="nnnnn (-nnnnn)" pattern="^\d{5}(-\d{4})?$">
+                </div>
+
+                <div class="formRow">
+                    <label for="date">Current Date*</label>
+                    <input type="date" name="perDate" id="date" required>
+                </div>
+
+                <div class="formRow">
+                    <label for="color">Favorite Color</label>
+                    <input type="color" name="perColor" id="color">
+                </div>
+
+                <div class="formRow">
+                    <label for="rangeBox">How would you rate this website?</label>
+                    0
+                    <input type="range" name="perEx" id="rangeBox" value="5" step="1" min="0" max="10">
+                    10
+                </div>
+
+                <div class="formRow">
+                    <label for="extra">Anything else?</label>
+                    <textarea name="perExp" id="extra"></textarea>
+                </div>
+            </fieldset>
+
+            <div id="buttons">
+                <input type="submit" value="Submit my survey">
+                <input type="reset" value="Cancel">
+             </div>
+        </form>
+        <br>
+        <hr>
+        <footer>
+            Contact:
+            <a href="mailto:jderbin05@gmail.com">jderbin05@gmail.com</a>
+        </footer>
+    </body>
+</html>

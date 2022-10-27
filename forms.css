@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+div.formRow {
+   display: flex;
+   flex-flow: row wrap;
+   margin: 7px 0px;
+}
+
+div.formRow > * {
+   flex: 1 1 150px;
+}
+
+form#survey {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+form#survey > fieldset {
+   background-color: rgb(241, 232, 181);
+   color: #000000;
+   border-radius: 20px;
+   flex: 1 1 300px;
+   font-size: 0.8em;
+   padding: 10px;
+   margin: 10px;
+}
+
+legend {
+   background-color: rgb(179, 20, 25);
+   color: white;
+   padding: 5px;
+}
+
+textarea {
+   margin-top: 10px;
+   height: 100px;
+   width: 95%;
+}
+
+div#buttons {
+   text-align: center;
+   width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+   font-size: 1.2em;
+   padding: 5px;
+   margin: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+   background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:valid, input#zip:focus:valid, input#phone:focus:valid, input#mail:focus:valid {
+   background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid, input#zip:focus:invalid, input#phone:focus:invalid, input#mail:focus:invalid {
+   background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+}
