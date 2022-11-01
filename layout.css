@@ -89,6 +89,10 @@ dt {
         width: 40%;
     }
 
+    iframe {
+        width: 50%;
+    }
+
     td {
         font-size: 75%;
     }
@@ -112,4 +116,18 @@ dt {
     img {
         width: 20%;
     }
+
+    
+    
+    .favRow {
+        
+        display: table-row;
+    }
+    
+    .favCell {
+        width: 66%;
+        display: table-cell;
+    }
+
+    
 }
