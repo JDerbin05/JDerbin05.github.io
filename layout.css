@@ -48,7 +48,7 @@ li, dl {
 table {
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid gray;
+    border: 5px solid #808080;
     border-collapse: collapse; 
     width: 100%;
     background-color: #000000;
@@ -117,17 +117,21 @@ dt {
         width: 20%;
     }
 
-    
+    div.favRow, div.favCell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    iframe {
+        padding: 0px 5px 5px 0px;
+    }
     
     .favRow {
-        
         display: table-row;
     }
     
     .favCell {
-        width: 66%;
         display: table-cell;
     }
-
-    
 }
