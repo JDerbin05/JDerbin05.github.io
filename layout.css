@@ -92,6 +92,24 @@ iframe {
         font-size: 150%;
     }
 
+    .navCell {
+        padding: 0.5% 1.875% 0.5% 1.875%;
+    }
+
+    div.navRow, div.navCell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navRow {
+        display: table-row;
+    }
+    
+    .navCell {
+        display: table-cell;
+    }
+
     img {
         width: 60%;
     }
@@ -129,6 +147,10 @@ iframe {
 }
 
 @media only screen and (min-width: 769px) {
+
+    .navCell, .navRow {
+        display: inline;
+    }
     img {
         width: 20%;
     }
