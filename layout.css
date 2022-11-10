@@ -26,10 +26,14 @@ nav li, td li {
     padding: 2.5%;    
 }
 
-nav a, h1 {
+nav a, li#nonLink, h1 {
     text-shadow: #000000 5px 5px 5px;
     font-weight: bold;
     font-size: 2em; 
+}
+
+li.embedLink {
+    font-size: 0.5em;
 }
 
 a:hover, a:active {
@@ -88,26 +92,8 @@ iframe {
 }
 
 @media only screen and (max-width: 480px) {
-    h1, nav a{
-        font-size: 150%;
-    }
-
-    .navCell {
-        padding: 0.5% 1.875% 0.5% 1.875%;
-    }
-
-    div.navRow, div.navCell {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .navRow {
-        display: table-row;
-    }
-    
-    .navCell {
-        display: table-cell;
+    h1, nav a, li#nonLink{
+        font-size: 1.5em;
     }
 
     img {
@@ -137,6 +123,10 @@ iframe {
 }
 
 @media only screen and (min-width: 481px) {
+    li#nonLink::before {
+        content: "More";
+    }
+    
     img {
         width: 50%;
     }
@@ -147,10 +137,6 @@ iframe {
 }
 
 @media only screen and (min-width: 769px) {
-
-    .navCell, .navRow {
-        display: inline;
-    }
     img {
         width: 20%;
     }
