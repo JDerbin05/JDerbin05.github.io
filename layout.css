@@ -16,8 +16,8 @@ body, nav li {
     text-align: center;
 }
 
-nav ul, td ul {
-    padding: 0;
+nav ul, #nonLink, td ul {
+    padding: 0px;
     margin: 0px;
 }
 
@@ -66,7 +66,7 @@ td {
     vertical-align: top;
 }
 
-ul.multi-link, li > ul {
+ul.multi-link {
     display: none;
 }
 
