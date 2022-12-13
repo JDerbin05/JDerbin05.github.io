@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Jeffrey Derbin's Website</title>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Jeffrey Derbin's Website</title>
         <link href="layout.css" rel="stylesheet" media="screen">
         <link href="print.css" rel="stylesheet" media="print">
         <link rel="shortcut icon" href="icon.png" type="image/png">
     </head>
 
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="terminology.html">Terms</a></li>
-                    <li id="nonLink">
-                        <ul class="more">
-                            <li class="embedLink"><a href="about_me.html">About</a></li>
-                            <li class="embedLink"><a href="hobby.html">Hobby</a></li>
-                            <li class="embedLink"><a href="form.html">Form</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <h1>Home</h1>
-        <img src="me.png" alt="Picture of Me." >
-        <p>I am Jeffrey Derbin. I am a 17 year old senior at Cuyahoga Heights High School and Cuyahoga Valley Career Center.</p>
-        <p>At Cuyahoga Valley Career Center I have been in the following:</p>
-        <ul>
-            <li>Object-Oriented Programming</li>
-            <li>Programming</li>
-            <li>Web Design</li>
-            <li>Database Applications Development</li>
-            <li>BPA</li>
-        </ul>
-        <p>My <a href="resume_content.pdf" target="_blank">Resume</a></p>
-        <hr>
-        <footer>
-            Contact:
-            <a href="mailto:jderbin05@gmail.com">jderbin05@gmail.com</a>
-        </footer>
+        <div class="container-fluid">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="terminology.html">Terms</a></li>
+                        <li id="nonLink">
+                            <ul class="more">
+                                <li class="embedLink"><a href="about_me.html">About</a></li>
+                                <li class="embedLink"><a href="hobby.html">Hobby</a></li>
+                                <li class="embedLink"><a href="form.html">Form</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <h1 class="page-header">Home</h1>
+            <img src="me.png" alt="Picture of Me." >
+            <p>I am Jeffrey Derbin. I am a 17 year old senior at Cuyahoga Heights High School and Cuyahoga Valley Career Center.</p>
+            <p>At Cuyahoga Valley Career Center I have been in the following:</p>
+            <ul>
+                <li>Object-Oriented Programming</li>
+                <li>Programming</li>
+                <li>Web Design</li>
+                <li>Database Applications Development</li>
+                <li>BPA</li>
+            </ul>
+            <p>My <a href="resume_content.pdf" target="_blank">Resume</a></p>
+            <hr>
+            <footer>
+                Contact:
+                <a href="mailto:jderbin05@gmail.com">jderbin05@gmail.com</a>
+            </footer>
+        </div>
     </body>
 </html>

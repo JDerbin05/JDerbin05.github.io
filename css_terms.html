@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>JD: CSS Terms</title>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>JD: CSS Terms</title>
         <link href="layout.css" rel="stylesheet" media="screen">
         <link href="print.css" rel="stylesheet" media="print">
         <link rel="shortcut icon" href="icon.png" type="image/png">
     </head>
 
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="terminology.html">Terms</a></li>
-                    <li id="nonLink">
-                        <ul class="more">
-                            <li class="embedLink"><a href="about_me.html">About</a></li>
-                            <li class="embedLink"><a href="hobby.html">Hobby</a></li>
-                            <li class="embedLink"><a href="form.html">Form</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <h1>CSS</h1>
-        <dl>
-            <dt>color: value</dt>
-            <dd>changes font color.</dd>
-            <dt>background-color: value</dt>
-            <dd>changes background color with hex, rgb, hsl.</dd>
-            <dt>font-family: list</dt>
-            <dd>comma separated list that goes from most to least specific font.</dd>
-            <dt>font-size: value</dt>
-            <dd>changes the font size.</dd>
-            <dt>text-align: value</dt>
-            <dd>changes text alignment to center, left, right, or justify.</dd>
-            <dt>text-decoration: value</dt>
-            <dd>changes decoration of text, underline, or none.</dd>
-            <dt>display: value</dt>
-            <dd>changes the way the content is displayed. ex: inline, block, table, table-row, table-cell.</dd>
-            <dt>border-style: value</dt>
-            <dd>changes the border type like dotted, dashed, solid, etc.</dd>
-            <dt>padding: value</dt>
-            <dd>changes the padding space of the element.</dd>
-            <dt>box-sizing: value</dt>
-            <dd>change how things get displayed content or border-style.</dd>
-            <dt>float: value</dt>
-            <dd>changes the position of the element on left or right margin.</dd>
-            <dt>clear: value</dt>
-            <dd>pushes the element down until there are no floats on the specified side(s).</dd>
-            <dt>outline: width type color</dt>
-            <dd>creates an outline around the specified element.</dd>
-            <dt>line-height</dt>
-            <dd>changes the height of the lines.</dd>
-            <dt>letter-spacing: value</dt>
-            <dd>changes the spacing between letters.</dd>
-            <dt>border: width type color; </dt>
-            <dd>shorthand for a border.</dd>
-            <dt>text-shadow color h-shadow v-shadow blur;</dt>
-            <dd>adds a shadow to text.</dd>
-            <dt>box-shadow color h-shadow v-shadow blur;</dt>
-            <dd>adds a shadow around an element.</dd>
-            <dt>font-weight</dt>
-            <dd>changes the weight of the font. includes bold, bolder.</dd>
-            <dt>font-style</dt>
-            <dd>changes the style of the font. ex: italic.</dd>
-        </dl>
-        <p>Go To <a href="html_terms.html">HTML Terms</a></p>
-        <hr>
-        <footer>
-            Contact:
-            <a href="mailto:jderbin05@gmail.com">jderbin05@gmail.com</a>
-        </footer>
+        <div class="container-fluid">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="terminology.html">Terms</a></li>
+                        <li id="nonLink">
+                            <ul class="more">
+                                <li class="embedLink"><a href="about_me.html">About</a></li>
+                                <li class="embedLink"><a href="hobby.html">Hobby</a></li>
+                                <li class="embedLink"><a href="form.html">Form</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <h1 class="page-header">CSS</h1>
+            <dl>
+                <dt>color: value</dt>
+                <dd>changes font color.</dd>
+                <dt>background-color: value</dt>
+                <dd>changes background color with hex, rgb, hsl.</dd>
+                <dt>font-family: list</dt>
+                <dd>comma separated list that goes from most to least specific font.</dd>
+                <dt>font-size: value</dt>
+                <dd>changes the font size.</dd>
+                <dt>text-align: value</dt>
+                <dd>changes text alignment to center, left, right, or justify.</dd>
+                <dt>text-decoration: value</dt>
+                <dd>changes decoration of text, underline, or none.</dd>
+                <dt>display: value</dt>
+                <dd>changes the way the content is displayed. ex: inline, block, table, table-row, table-cell.</dd>
+                <dt>border-style: value</dt>
+                <dd>changes the border type like dotted, dashed, solid, etc.</dd>
+                <dt>padding: value</dt>
+                <dd>changes the padding space of the element.</dd>
+                <dt>box-sizing: value</dt>
+                <dd>change how things get displayed content or border-style.</dd>
+                <dt>float: value</dt>
+                <dd>changes the position of the element on left or right margin.</dd>
+                <dt>clear: value</dt>
+                <dd>pushes the element down until there are no floats on the specified side(s).</dd>
+                <dt>outline: width type color</dt>
+                <dd>creates an outline around the specified element.</dd>
+                <dt>line-height</dt>
+                <dd>changes the height of the lines.</dd>
+                <dt>letter-spacing: value</dt>
+                <dd>changes the spacing between letters.</dd>
+                <dt>border: width type color; </dt>
+                <dd>shorthand for a border.</dd>
+                <dt>text-shadow color h-shadow v-shadow blur;</dt>
+                <dd>adds a shadow to text.</dd>
+                <dt>box-shadow color h-shadow v-shadow blur;</dt>
+                <dd>adds a shadow around an element.</dd>
+                <dt>font-weight</dt>
+                <dd>changes the weight of the font. includes bold, bolder.</dd>
+                <dt>font-style</dt>
+                <dd>changes the style of the font. ex: italic.</dd>
+            </dl>
+            <p>Go To <a href="html_terms.html">HTML Terms</a></p>
+            <hr>
+            <footer>
+                Contact:
+                <a href="mailto:jderbin05@gmail.com">jderbin05@gmail.com</a>
+            </footer>
+        </div>
     </body>
 </html>
