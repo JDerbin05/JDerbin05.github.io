@@ -25,11 +25,20 @@
                     <a id="navicon" class="text-right" href="#"><span class="glyphicon glyphicon-list"></span></a>
                     <div class="main-links">
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="index.html">JD</a>
+                            <a class="active navbar-brand" href="index.html">JD</a>
                         </div>
                         <ul class="nav navbar-nav">
                             <li><a href="projects.html">Projects</a></li>
-                            <li class="active"><a href="terminology.html">Terms</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Terms
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="html_terms.html">HTML</a></li>
+                                        <li><a href="css_terms.html">CSS</a></li>
+                                </ul>
+                            </li>
                             <li><a href="about_me.html">About Me</a></li>
                             <li><a href="hobby.html">Hobby</a></li>
                             <li><a href="form.html">Form</a></li>
@@ -68,7 +77,6 @@
                 <dt>&lt;span&gt; &lt;/span&gt;</dt>
                 <dd>used to organize inline elements.</dd>
             </dl>
-            <p>Go To <a href="css_terms.html"> CSS Terms</a></p>
             <hr>
             <footer>
                 Contact:
