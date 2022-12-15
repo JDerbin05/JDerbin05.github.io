@@ -21,42 +21,45 @@
     <body>
         <div class="container-fluid">
             <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="terminology.html">Terms</a></li>
-                        <li id="nonLink">
-                            <ul class="more">
-                                <li class="embedLink"><a href="about_me.html">About</a></li>
-                                <li class="embedLink"><a href="hobby.html">Hobby</a></li>
-                                <li class="embedLink"><a href="form.html">Form</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <nav class="col-md-12 navbar navbar-inverse navbar-fixed-top">
+                    <a id="navicon" class="text-right" href="#"><span class="glyphicon glyphicon-list"></span></a>
+                    <div class="main-links">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">JD</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="projects.html">Projects</a></li>
+                            <li><a href="terminology.html">Terms</a></li>
+                            <li><a href="about_me.html">About Me</a></li>
+                            <li><a href="hobby.html">Hobby</a></li>
+                            <li><a href="form.html">Form</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <h1 class="page-header">Projects</h1>
-            <table>
-                <tr>
-                    <td><a href="tutorial01/ct_start.html" target="_blank">Tutorial 1</a></td>
-                    <td><a href="tutorial02/tss_home.html" target="_blank">Tutorial 2</a></td>
-                    <td><a href="tutorial03/pc_home.html" target="_blank">Tutorial 3</a></td>
-                    <td><a href="tutorial04/tb_komatsu.html" target="_blank">Tutorial 4</a></td>
-                    <td><a href="tutorial05/tf_home.html" target="_blank">Tutorial 5</a></td>
-                    <td>
-                        Tutorial 6
-                        <ul class="multi-link">
-                            <li><a href="tutorial06/dlr_lw0414.html" target="_blank">Page 1</a></li>
-                            <li><a href="tutorial06/dlr_evenings.html" target="_blank">Page 2</a></li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3"><a href="tutorial07/rb_survey.html" target="_blank">Tutorial 7</a></td>
-                    <td colspan="3"><a href="tutorial08/cp_royal.html" target="_blank">Tutorial 8</a></td>
-                </tr>
-            </table>
+            <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <td colspan="3"><a href="tutorial01/ct_start.html" target="_blank">Tutorial 1</a></td>
+                        <td colspan="3"><a href="tutorial02/tss_home.html" target="_blank">Tutorial 2</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="tutorial03/pc_home.html" target="_blank">Tutorial 3</a></td>
+                        <td><a href="tutorial04/tb_komatsu.html" target="_blank">Tutorial 4</a></td>
+                        <td><a href="tutorial05/tf_home.html" target="_blank">Tutorial 5</a></td>
+                        <td>
+                            Tutorial 6
+                            <ul class="multi-link">
+                                <li><a href="tutorial06/dlr_lw0414.html" target="_blank">Page 1</a></li>
+                                <li><a href="tutorial06/dlr_evenings.html" target="_blank">Page 2</a></li>
+                            </ul>
+                        </td>
+                        <td><a href="tutorial07/rb_survey.html" target="_blank">Tutorial 7</a></td>
+                        <td><a href="tutorial08/cp_royal.html" target="_blank">Tutorial 8</a></td>
+                    </tr>
+                </table>
+            </div>
             <hr>
             <footer>
                 Contact:

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body{
+body {
     background: linear-gradient(#008452, #00444d 75%);
     background-attachment: fixed;
     line-height: 200%;
@@ -22,24 +22,22 @@ nav ul, #nonLink, td ul {
     margin: 0px;
 }
 
-nav li, td li {
+td li {
     display: inline;
     padding: 0px 2.5% 0px 2.5%;    
 }
 
-nav a, li#nonLink, h1{
-    text-shadow: #000000 5px 5px 5px;
+nav a{
     font-weight: bold;
-    font-size: 2em; 
-}
-
-ul.more a {
-    font-size: 1em;
 }
 
 a:hover, a:active {
     color: #00ddfa;
     text-decoration: underline;
+}
+
+h1 {
+    text-shadow: #000000 5px 5px 5px;
 }
 
 img {
@@ -93,7 +91,24 @@ iframe {
 }
 
 @media only screen and (max-width: 480px) {
-    h1, nav a, li#nonLink{
+    body {
+        padding-top: 5%;
+    }
+    
+    .glyphicon-list {
+        display: block;
+        font-size: 1.333em;
+    }
+
+    .main-links {
+        display: none;
+    }
+
+    a#navicon:hover+.main-links, div.main-links:hover {
+        display: block;
+    }
+
+    nav a {
         font-size: 1.5em;
     }
 
@@ -124,8 +139,23 @@ iframe {
 }
 
 @media only screen and (min-width: 481px) {
-    
-    
+    body {
+        padding-top: 5%;
+    }
+
+    .glyphicon-list {
+        display: block;
+        font-size: 2em;
+    }
+
+    .main-links {
+        display: none;
+    }
+
+    a#navicon:hover+.main-links, div.main-links:hover {
+        display: block;
+    }
+
     img {
         width: 50%;
     }
@@ -136,6 +166,18 @@ iframe {
 }
 
 @media only screen and (min-width: 769px) {
+    body {
+        padding-top: 1.25%;
+    }
+
+    #navicon {
+        display: none;
+    }
+
+    .main-links {
+        display: block;
+    }
+
     img {
         width: 20%;
     }
