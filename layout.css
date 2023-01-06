@@ -13,8 +13,12 @@ body, a:link, a:visited, .navbar-header .navbar-brand, .nav.navbar-nav li a {
     text-decoration: none;
 }
 
-body {
-    text-align: center;
+.container-fluid {
+    padding: 0px;
+}
+
+nav, dl {
+    padding: 0px 15px;
 }
 
 nav a{
@@ -27,19 +31,28 @@ nav a{
 
 .navbar-inverse .navbar-nav > .active > a {
     background-color: #008452;
+    color: #d3d3d3;
 }
 
-a:hover, a:active {
-    color: #00ddfa;
-    text-decoration: underline;
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #00889a;
+    color: #d3d3d3;
 }
 
 h1 {
     text-shadow: #000000 5px 5px 5px;
 }
 
+.page-header {
+    border-bottom: 4px solid #d3d3d3;
+}
+
 img {
     width: 20%;
+}
+
+ul {
+    display: inline-block;
 }
 
 td li {
@@ -51,9 +64,9 @@ td li {
     width: 30%;
 }
 
-li, dl {
+/*li, dl {
     text-align: left;
-}
+}*/
 
 table {
     margin-left: auto;
@@ -96,6 +109,10 @@ dt {
 
 iframe {
     border-style: none;
+}
+
+hr {
+    border: 2px solid #d3d3d3;
 }
 
 @media only screen and (max-width: 480px) {
