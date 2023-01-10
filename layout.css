@@ -86,8 +86,9 @@ td:hover .multi-link, li:hover .hobby {
 }
 
 td li {
-    display: inline;
-    padding: 0px 2.5% 0px 2.5%;    
+    /*display: inline;*/
+    list-style-position: inside;
+    padding: 2.5% 2.5% 0px 2.5%;    
 }
 
 li ul > li {
@@ -108,25 +109,12 @@ iframe {
 }
 
 hr {
-    border: 2px solid #d3d3d3;
+    border-top: 4px solid #d3d3d3;
 }
 
 @media only screen and (max-width: 480px) {
     body {
         padding-top: 5%;
-    }
-    
-    .glyphicon-list {
-        display: block;
-        font-size: 1.333em;
-    }
-
-    .main-links {
-        display: none;
-    }
-
-    a#navicon:hover+.main-links, div.main-links:hover {
-        display: block;
     }
 
     nav a {
@@ -149,7 +137,14 @@ hr {
         width: 75%
     }
 
-    .row, col-md-6, iframe {
+    .row, col-md-6 {
+        width: fit-content;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    iframe {
         width: 100%;
         height: 100%;
         margin-left: auto;
@@ -166,24 +161,18 @@ hr {
         padding-top: 5%;
     }
 
-    .glyphicon-list {
-        display: block;
-        font-size: 2em;
-    }
-
-    .main-links {
-        display: none;
-    }   
-
-    a#navicon:hover+.main-links, div.main-links:hover {
-        display: block;
-    }
-
     img {
         width: 50%;
     }
 
-    .row, col-md-6, iframe {
+    .row, col-md-6 {
+        width: fit-content;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    iframe {
         width: 100%;
         height: 100%;
         margin-left: auto;
@@ -200,35 +189,22 @@ hr {
         padding-top: 1.25%;
     }
 
-    #navicon {
-        display: none;
-    }
-
-    .main-links {
-        display: block;
-    }
-
     img {
         width: 20%;
     }
 
-    div.favRow, div.favCell {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .row, col-md-6 {
+        width: fit-content;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     iframe {
         width: 560px;
         height: 315px;
-    }
-    
-    .favRow {
-        display: table-row;
-    }
-    
-    .favCell {
-        display: table-cell;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hobby img {
