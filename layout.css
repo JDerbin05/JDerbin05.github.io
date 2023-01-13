@@ -77,22 +77,6 @@ td {
     vertical-align: top;
 }
 
-.multi-link, .hobby {
-    display: none;
-}
-
-td:hover .multi-link, li:hover .hobby {
-    display: block;
-}
-
-td li, ul.text-center li {
-    list-style-position: inside;
-}
-
-td li {
-    padding: 2.5% 2.5% 0px 2.5%;    
-}
-
 dt {
     font-style: italic;
     padding: 1.025%;
@@ -106,6 +90,18 @@ figure {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}
+
+.img-rounded {
+    border-radius: 15px;
+}
+
+.hobby {
+    display: none;
+}
+
+li:hover .hobby {
+    display: block;
 }
 
 li ul > li {
@@ -131,10 +127,6 @@ hr {
 
     td {
         font-size: 75%;
-    }
-
-    ul.multi-link, li > ul, .hobby {
-        display: block;
     }
 
     dl {
@@ -163,6 +155,10 @@ hr {
         padding-bottom: 15px;
     }
 
+    .hobby {
+        display: block;
+    }
+
     .hobby img {
         width: 10em;
     }
@@ -175,10 +171,6 @@ hr {
 
     img {
         width: 50%;
-    }
-
-    ul.multi-link, li > ul, .hobby {
-        display: block;
     }
 
     .row, col-md-6 {
@@ -201,6 +193,10 @@ hr {
 
     .credit {
         padding-bottom: 10px;
+    }
+
+    .hobby {
+        display: block;
     }
     
     .hobby img {
