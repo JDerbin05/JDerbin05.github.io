@@ -1,72 +1,72 @@
 @charset "utf-8";
 
 div.formRow {
-   display: flex;
-   flex-flow: row wrap;
-   margin: 7px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 7px 0px;
 }
 
 div.formRow > * {
-   flex: 1 1 150px;
+  flex: 1 1 150px;
 }
 
 form#survey {
-   display: flex;
-   flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 form#survey > fieldset {
-   background-color: #202020;
-   border-radius: 20px;
-   border-color: #808080;
-   flex: 1 1 300px;
-   font-size: 0.8em;
-   padding: 10px;
-   margin: 10px;
+  background-color: #202020;
+  border-radius: 20px;
+  border-color: #808080;
+  flex: 1 1 300px;
+  font-size: 0.8em;
+  padding: 10px;
+  margin: 10px;
 }
 
 legend {
-   background-color: #808080;
-   color: #d3d3d3;
-   padding: 5px;
-   width: 25%;
-   border-radius: 1em;
+  background-color: #808080;
+  color: #d3d3d3;
+  padding: 5px;
+  width: 25%;
+  border-radius: 1em;
 }
 
 textarea {
-   margin-top: 10px;
-   height: 100px;
-   width: 95%;
+  margin-top: 10px;
+  height: 100px;
+  width: 95%;
 }
 
 div#buttons {
-   text-align: center;
-   width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 input[type='submit'], input[type='reset'] {
-   font-size: 1.2em;
-   padding: 5px;
-   margin: 15px;
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 15px;
 }
 
 input, select, textarea {
-   background-color: #404040;
-   color: #d3d3d3;
+  background-color: #404040;
+  color: #d3d3d3;
 }
 
 ::placeholder {
-   color: rgba(211, 211, 211, 0.5)
+  color: rgba(211, 211, 211, 0.5)
 }
 
 input:focus, select:focus, textarea:focus {
-   background-color: rgb(110, 196, 110);
+  background-color: rgb(110, 196, 110);
 }
 
 input#name:focus:valid, input#zip:focus:valid, input#phone:focus:valid, input#mail:focus:valid {
-   background: rgb(0, 128, 0) url(Images/rb_valid.png) bottom right/contain no-repeat;
+  background: rgb(0, 128, 0) url(Images/rb_valid.png) bottom right/contain no-repeat;
 }
 
 input#name:focus:invalid, input#zip:focus:invalid, input#phone:focus:invalid, input#mail:focus:invalid {
-   background: rgb(128, 0, 0) url(Images/rb_invalid.png) bottom right/contain no-repeat;
+  background: rgb(128, 0, 0) url(Images/rb_invalid.png) bottom right/contain no-repeat;
 }
