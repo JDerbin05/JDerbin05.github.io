@@ -1,5 +1,6 @@
 @charset "utf-8";
 body {
+  padding-top: 5%;
   background: linear-gradient(#008452, #00444d 75%);
   background-attachment: fixed;
   line-height: 200%;
@@ -24,18 +25,22 @@ nav a{
   font-weight: bold;
 }
 
+.navbar-inverse .navbar-header > .navbar-brand, 
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > .dropdown > a:hover, 
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover {
+  color: #d3d3d3;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-header > .navbar-brand:hover, .navbar-inverse .navbar-nav > .dropdown > a:hover {
+  background-color: #00889a;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-header > .active, .navbar-inverse .navbar-header > .active:hover {
+  background-color: #008452;
+}
+
 .nav.navbar-nav .dropdown-menu li a {
   color: #000000;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > .dropdown > a:hover {
-  background-color: #00889a;
-  color: #d3d3d3;
-}
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover {
-  background-color: #008452;
-  color: #d3d3d3;
 }
 
 h1 {
@@ -44,10 +49,6 @@ h1 {
 
 .page-header {
   border-bottom: 4px solid #222;
-}
-
-img {
-  width: 20%;
 }
 
 ul.center-UL {
@@ -62,17 +63,25 @@ a:hover, a:active {
   color: #00ddfa;
 }
 
-table {
+table, .row, col-md-6, iframe, figure {
   margin-left: auto;
   margin-right: auto;
+}
+
+table, td {
   border: 5px solid #808080;
-  border-collapse: collapse; 
+}
+
+table, iframe {
   width: 100%;
+}
+
+table {
+  border-collapse: collapse;
   background-color: #000000;
 }
 
 td {
-  border: 5px solid #808080;
   vertical-align: top;
 }
 
@@ -81,26 +90,25 @@ dt {
   padding: 1.025%;
 }
 
-iframe {
-  border-style: none;
+.row, col-md-6, figure {
+  width: fit-content;
 }
 
-figure {
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+.row, col-md-6 {
+  height: fit-content;
+}
+
+iframe {
+  border-style: none;
+  height: 100%;
 }
 
 .img-rounded {
   border-radius: 15px;
 }
 
-.hobby {
-  display: none;
-}
-
-li:hover .hobby {
-  display: block;
+.credited-image, .hobby img {
+  width: 75%;
 }
 
 li ul > li {
@@ -112,10 +120,6 @@ hr {
 }
 /****************MEDIA QUERIES****************/
 @media only screen and (max-width: 480px) {
-  body {
-    padding-top: 5%;
-  }
-
   nav a {
     font-size: 1.5em;
   }
@@ -132,76 +136,18 @@ hr {
     width: 75%
   }
 
-  .row, col-md-6 {
-    width: fit-content;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  iframe {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .credited-image {
-    width: 10em;
-  }
-
   .credit {
     padding-bottom: 15px;
-  }
-
-  .hobby {
-    display: block;
-  }
-
-  .hobby img {
-    width: 10em;
   }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 481px) {
-  body {
-    padding-top: 5%;
-  }
-
-
-
   img {
     width: 50%;
   }
 
-  .row, col-md-6 {
-    width: fit-content;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  iframe {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .credited-image {
-    width: 20em;
-  }
-
   .credit {
     padding-bottom: 10px;
-  }
-
-  .hobby {
-    display: block;
-  }
-    
-  .hobby img {
-    width: 20em;
   }
 }
 
@@ -220,33 +166,27 @@ hr {
     width: 20%;
   }
 
-  .row, col-md-6 {
-    width: fit-content;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   iframe {
     width: 560px;
     height: 315px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .credited-image {
     width: 30em;
   }
 
-  .credit {
+  .credit, .hobby {
     display: none;
   }
 
-  figure:hover .credit {
+  figure:hover .credit, li:hover .hobby {
     display: block;
-    padding-bottom: 5px;
   }
 
+  figure:hover .credit {
+    padding-bottom: 5px;
+  }
+  
   .hobby img {
     width: 30em;
   }
