@@ -25,22 +25,32 @@ nav a{
   font-weight: bold;
 }
 
-.navbar-inverse .navbar-header > .navbar-brand, 
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > .dropdown > a:hover, 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover {
+.navbar-inverse {
+  border: none;
+}
+
+.navbar-inverse .navbar-header > .navbar-brand, .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > .dropdown > a:hover, 
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .nav.navbar-nav .open .dropdown-menu li a, 
+.nav.navbar-nav .open .dropdown-menu > .active > a {
   color: #d3d3d3;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-header > .navbar-brand:hover, .navbar-inverse .navbar-nav > .dropdown > a:hover {
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-header > .navbar-brand:hover, .navbar-inverse .navbar-nav > .dropdown > a:hover, 
+.navbar-inverse .navbar-nav > .open > .dropdown-menu a:hover {
   background-color: #00889a;
 }
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-header > .active, .navbar-inverse .navbar-header > .active:hover {
-  background-color: #008452;
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-header > .active, .navbar-inverse .navbar-header > .active:hover, 
+.navbar-inverse .navbar-nav > .open >  .dropdown-menu .active a, .navbar-inverse .navbar-nav > .open >  .dropdown-menu .active a:hover {
+  background-color: #007f51;
 }
 
-.nav.navbar-nav .dropdown-menu li a {
-  color: #000000;
+.dropdown-menu, table {
+  background-color: #222;
+}
+
+.dropdown-menu {
+  border-top-width: 0px;
 }
 
 h1 {
@@ -78,7 +88,6 @@ table, iframe {
 
 table {
   border-collapse: collapse;
-  background-color: #000000;
 }
 
 td {
@@ -118,7 +127,7 @@ li ul > li {
 hr {
   border-top: 4px solid #222;
 }
-/****************MEDIA QUERIES****************/
+/******************************************MEDIA QUERIES******************************************/
 @media only screen and (max-width: 480px) {
   nav a {
     font-size: 1.5em;
@@ -171,7 +180,7 @@ hr {
     height: 315px;
   }
 
-  .credited-image {
+  .credited-image, .hobby img {
     width: 30em;
   }
 
@@ -185,9 +194,5 @@ hr {
 
   figure:hover .credit {
     padding-bottom: 5px;
-  }
-  
-  .hobby img {
-    width: 30em;
   }
 }
