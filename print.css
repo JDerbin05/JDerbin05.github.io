@@ -34,9 +34,16 @@ dd {
   page-break-before: avoid;
 }
 
+figure, .hobby img {
+  text-align: center;
+  vertical-align: top;
+}
+
 figure {
   width: 150%;
   height: 150%;
-  text-align: center;
-  vertical-align: middle;
+}
+
+.hobby img {
+  width: 50%;
 }
