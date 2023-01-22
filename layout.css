@@ -7,7 +7,9 @@ body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body, a:link, a:visited, .navbar-header .navbar-brand, .nav.navbar-nav li a {
+body, a:link, a:visited, .navbar-header .navbar-brand, .nav.navbar-nav li a, .navbar-inverse .navbar-header > .navbar-brand, .navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > .dropdown > a:hover, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .nav.navbar-nav .open .dropdown-menu li a, 
+.nav.navbar-nav .open .dropdown-menu > .active > a {
   color: #d3d3d3;
   text-decoration: none;
 }
@@ -26,12 +28,6 @@ nav a{
 
 .navbar-inverse {
   border: none;
-}
-
-.navbar-inverse .navbar-header > .navbar-brand, .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > .dropdown > a:hover, 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .nav.navbar-nav .open .dropdown-menu li a, 
-.nav.navbar-nav .open .dropdown-menu > .active > a {
-  color: #d3d3d3;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-header > .navbar-brand:hover, .navbar-inverse .navbar-nav > .dropdown > a:hover, 
@@ -81,18 +77,6 @@ table, td {
   border: 5px solid #808080;
 }
 
-table, iframe {
-  width: 100%;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-td {
-  vertical-align: top;
-}
-
 dt {
   font-style: italic;
   padding: 1.025%;
@@ -108,7 +92,6 @@ dt {
 
 iframe {
   border-style: none;
-  height: 100%;
 }
 
 .img-rounded {
@@ -149,6 +132,10 @@ hr {
 
   .credit {
     padding-bottom: 15px;
+  }
+
+  .text-danger {
+    font-size: .8em;
   }
 }
 

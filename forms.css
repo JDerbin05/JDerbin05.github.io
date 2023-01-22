@@ -20,7 +20,6 @@ form#survey > fieldset {
   border-radius: 20px;
   border-color: #808080;
   flex: 1 1 300px;
-  font-size: 0.8em;
   padding: 10px;
   margin: 10px;
 }
@@ -36,7 +35,6 @@ legend {
 textarea {
   margin-top: 10px;
   height: 100px;
-  width: 95%;
 }
 
 div#buttons {
