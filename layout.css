@@ -122,20 +122,12 @@ hr {
     width: 60%;
   }
 
-  td {
-    font-size: 75%;
+  td, .text-danger {
+    font-size: .8em;
   }
-
-  dl {
-    width: 75%
-  }
-
+  
   .credit {
     padding-bottom: 15px;
-  }
-
-  .text-danger {
-    font-size: .8em;
   }
 }
 
