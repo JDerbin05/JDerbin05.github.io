@@ -1,8 +1,7 @@
 @charset "utf-8";
 body {
   padding-top: 5%;
-  background: linear-gradient(#008452, #00444d 75%);
-  background-attachment: fixed;
+  background: linear-gradient(#008452 25%, #00444d) fixed;
   line-height: 200%;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -38,6 +37,7 @@ nav a{
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-header > .active, .navbar-inverse .navbar-header > .active:hover, 
 .navbar-inverse .navbar-nav > .open >  .dropdown-menu .active a, .navbar-inverse .navbar-nav > .open >  .dropdown-menu .active a:hover {
   background-color: #007f51;
+  background-color: #008452;
 }
 
 .dropdown-menu, table {
@@ -98,7 +98,7 @@ iframe {
   border-radius: 15px;
 }
 
-.credited-image, .hobby img {
+.credited-image {
   width: 75%;
 }
 
@@ -164,21 +164,21 @@ hr {
   img {
     width: 20%;
   }
-
-  iframe {
-    width: 560px;
-    height: 315px;
+  
+  hr {
+    clear: both;
   }
 
-  .credited-image, .hobby img {
+  iframe {
+    width: 165%;
+  }
+
+  .credited-image {
     width: 30em;
   }
 
-  .hobby {
-    display: none;
-  }
-
-  li:hover .hobby {
-    display: block;
+  .hobbyP {
+    margin-right: 25%;
+    margin-left: 25%;
   }
 }
