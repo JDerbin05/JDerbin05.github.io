@@ -1,3 +1,4 @@
+/*Function found and modified from W3schools: https://www.w3schools.com/howto/howto_js_sort_list.asp*/
 function sortList() {
   var list, i, switching, b, shouldSwitch;
   list = document.getElementById("id01");
