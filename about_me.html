@@ -15,12 +15,10 @@
         <title>JD: About Me</title>
         <link href="layout.css" rel="stylesheet" media="screen">
         <link href="print.css" rel="stylesheet" media="print">
-        <!--Function found and modified from W3schools: https://www.w3schools.com/howto/howto_js_sort_list.asp-->
-        <script src="sort_alpha.js"></script>
         <link rel="shortcut icon" href="Images/icon.png" type="image/png">
     </head>
 
-    <body onload="sortList(); sortList1();">
+    <body>
       <div class="container-fluid text-center">
         <header>
           <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -57,7 +55,7 @@
         <h1 class="page-header">About Me</h1>
         <div class="col-md-6">
           <h3>Favorite movies include: </h3>
-          <ul id="id01" class="center-UL text-left">
+          <ul class="center-UL text-left sort-me">
             <li><a href="https://en.wikipedia.org/wiki/Jurassic_Park" target="_blank">Jurassic Park</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Jaws_(film)" target="_blank">Jaws</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Pacific_Rim_(film)" target="_blank">Pacific Rim</a></li>
@@ -69,7 +67,7 @@
 
         <div class="col-md-6">
           <h3>Favorite video games include: </h3>
-          <ul id="id02" class="center-UL text-left">
+          <ul class="center-UL text-left sort-me">
             <li><a href="https://en.wikipedia.org/wiki/Call_of_Duty:_Modern_Warfare_3" target="_blank">Call of Duty: Modern Warfare 3</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Call_of_Duty:_WWII" target="_blank">Call of Duty: WWII</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Subnautica" target="_blank">Subnautica</a></li>
@@ -78,6 +76,22 @@
             <li><a href="https://en.wikipedia.org/wiki/Beat_Saber" target="_blank">Beat Saber</a></li>
           </ul>
         </div>
+        <script>
+          // Select all unordered lists with class "sort-me"
+          const listsToSort = document.querySelectorAll("ul.sort-me");
+
+          // Loop through each unordered list
+          listsToSort.forEach((list) => {
+            // Select all list items within the current list
+            const listItems = Array.from(list.querySelectorAll("li:not(.nav-link)"));
+            
+            // Sort the list items by text content
+            listItems.sort((a, b) => a.textContent.localeCompare(b.textContent));
+            
+            // Append the sorted list items back to the original list
+            listItems.forEach((item) => list.appendChild(item));
+          });
+        </script>
         <hr>
         <footer>
           Contact:
