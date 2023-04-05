@@ -12,12 +12,11 @@
 
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title>JD: Form</title>
+    <title>Jeffrey Derbin's Website</title>
     <link href="layout.css" rel="stylesheet" media="screen">
-    <link href="forms.css" rel="stylesheet">
     <link href="print.css" rel="stylesheet" media="print">
-    <link rel="shortcut icon" href="Images/icon.png" type="image/png">
-    <script src="formsubmit.js"></script>
+    <link rel="shortcut icon" href="Images/icon.png" type="image/png" style="width: 48px; height: 48px;">
+    <script src="grad_calc.js" defer></script>
   </head>
 
   <body>
@@ -46,81 +45,40 @@
                     <li><a class="text-center" href="css_terms.html">CSS</a></li>
                   </ul>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown active">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     About Me
                     <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="text-center" href="grad_date.html">Graduation Date</a></li>
+                    <li class="active"><a class="text-center" href="grad_date.html">Graduation Date</a></li>
                     <li><a class="text-center" href="favorites.html">Favorites</a></li>
                   </ul>
                 </li>
                 <li><a href="hobby.html">Hobby</a></li>
-                <li class="active"><a href="form.html">Form</a></li>
+                <li><a href="form.html">Form</a></li>
               </ul>
             </div>
           </div>
         </nav>
       </header>
-      <h1 class="page-header">Form</h1>
-      <form id="survey" action="http://www.example.com" method="post">
-        <fieldset id="mainSur">
-          <legend>Log</legend>
-          <div class="formRow">
-            <label for="name">Name*</label>
-            <input type="text" name="perName" id="name" placeholder="first and last name" required>
-          </div>
-
-          <div class="formRow">
-            <label for="ageSpin">Age</label>
-            <input type="number" name="perSpin" id="ageSpin" value="1" step="1" min="1" max="100">
-          </div>
-
-          <div class="formRow">
-            <label for="mail">E-mail*</label>
-            <input type="email" name="perEmail" id="mail">
-          </div>
-
-          <div class="formRow">
-            <label for="occ">School/Occupation</label>
-            <input type="text" name="perOcc" id="occ">
-          </div>
-
-          <div class="formRow">
-            <label for="zip">Postal Code</label>
-            <input name="perZip" id="zip" type="text" placeholder="nnnnn (-nnnnn)" pattern="^\d{5}(-\d{4})?$">
-          </div>
-
-          <div class="formRow">
-            <label for="date">Current Date*</label>
-            <input type="date" name="perDate" id="date" required>
-          </div>
-
-          <div class="formRow">
-            <label for="color">Favorite Color</label>
-            <input type="color" name="perColor" id="color">
-          </div>
-
-          <div class="formRow">
-            <label for="rangeBox">How would you rate this website?</label>
-            0
-            <input type="range" name="perEx" id="rangeBox" value="5" step="1" min="0" max="10">
-            10
-          </div>
-
-          <div class="formRow">
-            <label for="extra">Anything else?</label>
-            <textarea name="perExp" id="extra"></textarea>
-          </div>
-        </fieldset>
-
-        <div id="buttons">
-          <input type="submit" value="Submit my survey">
-          <input type="reset" value="Cancel">
+      <h1 class="page-header">Graduation Date</h1>
+      <div id="dates">
+        <div class="col-md-6">
+          <div>Current Date:</div>
+          <span id="current"> </span>
         </div>
-      </form>
-      <p class="text-danger">*Any data inserted in this form does not get saved. This is for presentation purposes only.</p>
+        <div class="col-md-6">
+          <div>Graduation Date:</div>
+          <span>5/28/2023</span>
+        </div>
+      </div>
+      <div id="countdown">
+        <div class="col-md-3"><span id="days">58</span><br />Days</div>
+        <div class="col-md-3"><span id="hrs">10</span><br />Hours</div>
+        <div class="col-md-3"><span id="mins">14</span><br />Minutes</div>
+        <div class="col-md-3"><span id="secs">48</span><br />Seconds</div>
+      </div>
       <hr>
       <footer>
         Contact:
