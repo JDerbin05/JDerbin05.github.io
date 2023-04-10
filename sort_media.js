@@ -6,7 +6,7 @@
 // Loop through each unordered list
 listsToSort.forEach((list) => {
     // Select all list items within the current list
-    const listItems = Array.from(list.querySelectorAll("li:not(.nav-link)"));
+    const listItems = Array.from(list.querySelectorAll("li"));
 
     // Sort the list items by text content
     listItems.sort((a, b) => a.textContent.localeCompare(b.textContent));

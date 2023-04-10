@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 body {
   padding-top: 5%;
   background: linear-gradient(#008452 25%, #00444d) fixed;
@@ -36,12 +37,11 @@ nav a{
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-header > .active, .navbar-inverse .navbar-header > .active:hover, 
 .navbar-inverse .navbar-nav > .open >  .dropdown-menu .active a, .navbar-inverse .navbar-nav > .open >  .dropdown-menu .active a:hover {
-  background-color: #007f51;
   background-color: #008452;
 }
 
 .dropdown-menu, table {
-  background-color: #222;
+  background-color: #00444d;
 }
 
 .dropdown-menu {
@@ -60,35 +60,38 @@ h1 {
   border-bottom: 4px solid #222;
 }
 
+a:hover, a:active {
+  color: #00ddfa;
+  text-decoration: underline;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, td {
+  border: 5px solid slategray;
+}
+
+dt, .credit {
+  font-style: italic;
+}
+
+dt {
+  padding: 1.025%;
+}
+
+.curDate, .gradDate, .credit {
+  padding-bottom: 5%;
+}
+
 .center-UL {
   display: inline-block;
 }
 
 li {
   list-style-type: square;
-}
-
-a:hover, a:active {
-  color: #00ddfa;
-}
-
-table, .row, col-md-6, iframe, figure {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-table, td {
-  border: 5px solid #808080;
-}
-
-dt {
-  font-style: italic;
-  padding: 1.025%;
-}
-
-#countdown, #dates {
-  margin-left: 25%;
-  margin-right: 25%;
 }
 
 .img-rounded {
@@ -101,16 +104,23 @@ dt {
 
 .credit {
   font-size: 75%;
-  font-style: italic;
+}
+
+.hobbyP {
+  margin-left: 5%;
+  text-indent: 8%;
 }
 
 hr {
   border-top: 4px solid #222;
+  clear: both;
 }
 /******************************************MEDIA QUERIES******************************************/
 @media only screen and (max-width: 480px) {
   body {
     font-size: 2em;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   nav a {
     font-size: 1.5em;
@@ -123,10 +133,6 @@ hr {
   td, .text-danger {
     font-size: .8em;
   }
-  
-  .credit {
-    padding-bottom: 15px;
-  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 481px) {
@@ -138,7 +144,7 @@ hr {
   }
 
   .credit {
-    padding-bottom: 10px;
+    padding-bottom: 3%;
   }
 }
 
@@ -157,13 +163,14 @@ hr {
   img {
     width: 20%;
   }
-  
-  hr {
-    clear: both;
+
+  #countdown, #dates {
+    margin-left: 30%;
+    margin-right: 30%;
   }
 
-  iframe {
-    width: 165%;
+  .curDate, .gradDate, .credit {
+    padding-bottom: 0%;
   }
 
   .credited-image {
@@ -171,7 +178,8 @@ hr {
   }
 
   .hobbyP {
-    margin-right: 25%;
     margin-left: 25%;
+    margin-right: 25%;
+    text-indent: 5%;
   }
 }
