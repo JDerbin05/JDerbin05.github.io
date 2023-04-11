@@ -18,7 +18,7 @@ body, a:link, a:visited, .navbar-header .navbar-brand, .nav.navbar-nav li a, .na
   padding: 0px;
 }
 
-nav, dl {
+nav {
   padding: 0px 15px;
 }
 
@@ -40,7 +40,7 @@ nav a{
   background-color: #008452;
 }
 
-.dropdown-menu, table {
+.dropdown-menu, table, button {
   background-color: #00444d;
 }
 
@@ -162,6 +162,10 @@ hr {
 
   img {
     width: 20%;
+  }
+
+  dl {
+    padding: 0px 15px;
   }
 
   #countdown, #dates {
