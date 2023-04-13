@@ -40,7 +40,7 @@ nav a{
   background-color: #008452;
 }
 
-.dropdown-menu, table, button {
+.dropdown-menu, .listBackground, button {
   background-color: #00444d;
 }
 
@@ -63,6 +63,15 @@ h1 {
 a:hover, a:active {
   color: #00ddfa;
   text-decoration: underline;
+}
+
+.listBackground {
+  width: 100%;
+  border-radius: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 table {
@@ -162,6 +171,10 @@ hr {
 
   img {
     width: 20%;
+  }
+
+  .listBackground {
+    width: 40%;
   }
 
   dl {
