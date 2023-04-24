@@ -40,7 +40,7 @@ nav a{
   background-color: #008452;
 }
 
-.dropdown-menu, .listBackground, button {
+.dropdown-menu, .listBackground {
   background-color: #00444d;
 }
 
@@ -74,13 +74,8 @@ a:hover, a:active {
   margin-right: auto;
 }
 
-table {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-table, td {
-  border: 5px solid slategray;
+.project li {
+  list-style-type: none;
 }
 
 dt, .credit {
@@ -124,6 +119,7 @@ hr {
   border-top: 4px solid #222;
   clear: both;
 }
+
 /******************************************MEDIA QUERIES******************************************/
 @media only screen and (max-width: 480px) {
   body {
