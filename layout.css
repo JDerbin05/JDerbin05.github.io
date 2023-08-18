@@ -78,6 +78,10 @@ a:hover, a:active {
   margin-right: auto;
 }
 
+.sep {
+  box-shadow: 10px 10px 8px #000000;
+}
+
 .project li {
   list-style-type: none;
 }
@@ -90,7 +94,7 @@ dt {
   padding: 1.025%;
 }
 
-.curDate, .gradDate, .credit {
+.credit {
   padding-bottom: 5%;
 }
 
@@ -142,6 +146,10 @@ hr {
   td, .text-danger {
     font-size: .8em;
   }
+
+  #mainSur {
+    font-size: .5em;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 481px) {
@@ -181,12 +189,7 @@ hr {
     padding: 0px 15px;
   }
 
-  #countdown, #dates {
-    margin-left: 30%;
-    margin-right: 30%;
-  }
-
-  .curDate, .gradDate, .credit {
+  .credit {
     padding-bottom: 0%;
   }
 
