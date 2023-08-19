@@ -123,6 +123,10 @@ li {
   text-indent: 8%;
 }
 
+.slider {
+  display: flex;
+}
+
 hr {
   border-top: 4px solid #222;
   clear: both;
