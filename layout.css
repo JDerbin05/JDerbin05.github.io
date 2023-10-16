@@ -7,11 +7,12 @@ body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body, a, a:hover, a:active, .navbar-header .navbar-brand, .nav.navbar-nav li a, .navbar-inverse .navbar-header > .navbar-brand, .navbar-inverse .navbar-nav > li > a:hover, 
+body, a, a:link, a:visited, .navbar-header .navbar-brand, .nav.navbar-nav li a, .navbar-inverse .navbar-header > .navbar-brand, .navbar-inverse .navbar-nav > li > a:hover, 
 .navbar-inverse .navbar-nav > .dropdown > a:hover, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .nav.navbar-nav .open .dropdown-menu li a, 
 .nav.navbar-nav .open .dropdown-menu > .active > a {
   color: #d3d3d3;
   font-style: normal;
+  text-decoration: none;
 }
 
 .container-fluid {
@@ -60,7 +61,7 @@ h1 {
   border-bottom: 4px solid #222;
 }
 
-a, a:hover, a:active {
+a, a:link, a:visited {
   font-style: italic;
 }
 
